@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <label>area</label>
+        <input type="number" name="total_sqft" required>
+        <br><br>
+        <label>Bedrooms</label>
+        <input type="number" name="bhk" required>
+        <br><br>
+        <label>Bath</label>
+        <input type="number" name="bath" required>
+        <br><br>
+        <label>location</label>
+        <select name="location">
+            {% for loc in locations %}
+                <option value="{{ loc }}" {% if loc == location %}selected{% endif %}>{{ loc }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h1>Predicted = {{ predicted_price }}</h1>
+</body>
+</html>
