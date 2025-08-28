@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #555555;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  text-align: center;
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 20px 0;
+}
+
+.submit {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 25px;
+  background-color: #007bff;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+}
+
+.book-poster {
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.book-name {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
